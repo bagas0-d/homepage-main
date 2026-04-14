@@ -7,9 +7,81 @@
   <link href="./output.css" rel="stylesheet">
   <title>Frontend Mentor | News homepage</title>
 </head>
-<body>
+<body class="min-h-screen w-full flex flex-col items-center p-4 gap-8 font-inter">
 
- 
+  <ul class="hidden">
+    <li>Home</li>
+    <li>New</li>
+    <li>Popular</li>
+    <li>Trending</li>
+    <li>Categories</li>
+  </ul>
+
+ <header class="flex items-center justify-between w-full">
+  <img src="../assets/images/logo.svg" alt="logo" class="block max-h-6">
+  <img src="../assets/images/icon-menu.svg" alt="menu" class="block max-h-4">
+ </header>
+
+ <main class="grid grid-cols-1 gap-12 max-w-7xl">
+  
+  <section class="grid grid-cols-1 gap-6">
+    <img src="../assets/images/image-web-3-mobile.jpg" class="block">
+    <h1 class="text-5xl font-extrabold text-neutral-very-dark-blue">The Bright Future of Web 3.0?</h1>
+    <div>
+      <p class="text-neutral-dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+      <button class="p-12 pt-4 pb-4 mt-4 bg-primary-red tracking-wider font-bold text-neutral-very-dark-blue">READ MORE</button>
+    </div>
+  </section>
+
+  <section class="flex flex-col p-6 gap-6 bg-neutral-very-dark-blue text-neutral-off-white">
+    <h2 class="text-3xl font-bold text-primary-orange">NEW</h2>
+
+    <div class="pb-4 border-b-2 border-neutral-dark-grayish-blue">
+      <h3 class="text-lg font-bold">Hydrogen VS Electric Cars</h3>
+      <p class="mt-2 text-sm text-neutral-grayish-blue">Will hydrogen-fueled cars ever catch up to EVs?</p>
+    </div>
+
+    <div class="pb-4 border-b-2 border-neutral-dark-grayish-blue">
+      <h3 class="text-lg font-bold">The Downsides of AI Artistry</h3>
+      <p class="mt-2 text-sm text-neutral-grayish-blue">What are the possible adverse effects of on-demand AI image generation?</p>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-bold">Is VC Funding Drying Up?</h3>
+      <p class="mt-2 text-sm text-neutral-grayish-blue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </div>
+  </section>
+
+  <section class="flex flex-col gap-4 ">
+    <div class="flex gap-4 ">
+      <img src="../assets/images/image-retro-pcs.jpg" alt="retro" class="block max-w-30">
+      <div class="flex flex-col gap-2">
+        <p class="text-3xl font-bold text-primary-red">01</p>
+        <h3 class="text-lg font-bold text-neutral-very-dark-blue">Reviving Retro PCs</h3>
+        <p class="text-sm text-neutral-dark-grayish-blue">What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+
+    <div class="flex gap-4 ">
+      <img src="../assets/images/image-top-laptops.jpg" alt="top laptops" class="block max-w-30">
+      <div class="flex flex-col gap-2">
+        <p class="text-3xl font-bold text-primary-red">02</p>
+        <h3 class="text-lg font-bold text-neutral-very-dark-blue">Top 10 Laptops of 2022</h3>
+        <p class="text-sm text-neutral-dark-grayish-blue">Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+
+    <div class="flex gap-4 ">
+      <img src="../assets/images/image-gaming-growth.jpg" alt="gaming-growth" class="block max-w-30">
+      <div>
+        <p class="text-3xl font-bold text-primary-red">03</p>
+        <h3 class="text-lg font-bold text-neutral-very-dark-blue">The Growth of Gaming</h3>
+        <p class="text-sm text-neutral-dark-grayish-blue">How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+ </main>
 
 </body>
 </html>
