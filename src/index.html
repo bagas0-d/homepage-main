@@ -12,20 +12,20 @@
  <header class="flex items-center justify-between w-full lg:pl-10 lg:pr-10">
   <img src="../assets/images/logo.svg" alt="logo" class="block max-h-6 sm:max-h-8">
   <img src="../assets/images/icon-menu.svg" alt="menu" class="block max-h-4 md:hidden" id="menu">
-  <ul class="hidden fixed top-0 right-0 w-3/4 h-screen pl-24 bg-white 
-           md:flex md:gap-6 md:w-auto md:static md:h-auto md:bg-transparent">
-    <img src="../assets/images/icon-menu-close.svg" alt="close" class="hidden absolute right-4 top-4">
-    <li class="pt-12 md:p-0"><a href="#">Home</a></li>
-    <li><a href="#">New</a></li>
-    <li><a href="#">Popular</a></li>
-    <li><a href="#">Trending</a></li>
-    <li><a href="#">Categories</a></li>
+  <ul class="hidden fixed top-0 right-0 w-3/4 h-screen pl-24 pt-12 bg-white 
+           md:flex md:p-0 md:gap-6 md:w-auto md:static md:h-auto md:bg-transparent" id="nav-container">
+    <img src="../assets/images/icon-menu-close.svg" alt="close" class="hidden absolute right-4 top-4 md:hidden" id="close-menu">
+    <li class="item"><a href="#">Home</a></li>
+    <li class="item pt-4 md:p-0"><a href="#">New</a></li>
+    <li class="item pt-4 md:p-0"><a href="#">Popular</a></li>
+    <li class="item pt-4 md:p-0"><a href="#">Trending</a></li>
+    <li class="item pt-4 md:p-0"><a href="#">Categories</a></li>  
   </ul>
  </header>
 
  <main class="grid grid-cols-1 gap-8 max-w-7xl lg:grid-cols-3">
   
-   <img src="../assets/images/image-web-3-mobile.jpg" class="block w-full lg:col-span-2">
+   <img src="../assets/images/image-web-3-mobile.jpg" class="block w-full lg:col-span-2" id="banner">
    <h1 class="text-5xl font-extrabold text-neutral-very-dark-blue lg:text-6xl">The Bright Future of Web 3.0?</h1>
    <div class="">
      <p class="text-neutral-dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
@@ -77,9 +77,8 @@
       <p class="text-sm text-neutral-dark-grayish-blue">How the pandemic has sparked fresh opportunities.</p>
     </div>
   </div>
-
-
  </main>
 
+ <script src="main.js"></script>
 </body>
 </html>
