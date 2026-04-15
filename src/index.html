@@ -7,36 +7,33 @@
   <link href="./output.css" rel="stylesheet">
   <title>Frontend Mentor | News homepage</title>
 </head>
-<body class="min-h-screen w-full flex flex-col items-center p-4 gap-8 font-inter">
+<body class="min-h-screen w-full min-w-80 flex flex-col items-center p-4 gap-8 font-inter sm:p-6 md:p-8">
 
-  <ul class="hidden">
-    <li>Home</li>
-    <li>New</li>
-    <li>Popular</li>
-    <li>Trending</li>
-    <li>Categories</li>
+ <header class="flex items-center justify-between w-full lg:pl-10 lg:pr-10">
+  <img src="../assets/images/logo.svg" alt="logo" class="block max-h-6 sm:max-h-8">
+  <img src="../assets/images/icon-menu.svg" alt="menu" class="block max-h-4 md:hidden" id="menu">
+  <ul class="hidden md:flex gap-6">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">New</a></li>
+    <li><a href="#">Popular</a></li>
+    <li><a href="#">Trending</a></li>
+    <li><a href="#">Categories</a></li>
   </ul>
-
- <header class="flex items-center justify-between w-full">
-  <img src="../assets/images/logo.svg" alt="logo" class="block max-h-6">
-  <img src="../assets/images/icon-menu.svg" alt="menu" class="block max-h-4">
  </header>
 
- <main class="grid grid-cols-1 gap-12 max-w-7xl">
+ <main class="grid grid-cols-1 gap-8 max-w-7xl lg:grid-cols-3">
   
-  <section class="grid grid-cols-1 gap-6">
-    <img src="../assets/images/image-web-3-mobile.jpg" class="block">
-    <h1 class="text-5xl font-extrabold text-neutral-very-dark-blue">The Bright Future of Web 3.0?</h1>
-    <div>
-      <p class="text-neutral-dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
-      <button class="p-12 pt-4 pb-4 mt-4 bg-primary-red tracking-wider font-bold text-neutral-very-dark-blue">READ MORE</button>
-    </div>
-  </section>
+   <img src="../assets/images/image-web-3-desktop.jpg" class="block w-full lg:col-span-2">
+   <h1 class="text-5xl font-extrabold text-neutral-very-dark-blue lg:text-6xl">The Bright Future of Web 3.0?</h1>
+   <div class="">
+     <p class="text-neutral-dark-grayish-blue">We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+     <button class="p-12 pt-4 pb-4 mt-4 bg-primary-red tracking-widest font-bold text-neutral-very-dark-blue">READ MORE</button>
+   </div>
 
-  <section class="flex flex-col p-6 gap-6 bg-neutral-very-dark-blue text-neutral-off-white">
+  <section class="flex flex-col p-6 gap-6 bg-neutral-very-dark-blue text-neutral-off-white lg:row-start-1 lg:row-end-3 lg:col-start-3">
     <h2 class="text-3xl font-bold text-primary-orange">NEW</h2>
 
-    <div class="pb-4 border-b-2 border-neutral-dark-grayish-blue">
+    <div class="pb-4 border-b-2 border-neutral-dark-grayish-blue lg:pt-16">
       <h3 class="text-lg font-bold">Hydrogen VS Electric Cars</h3>
       <p class="mt-2 text-sm text-neutral-grayish-blue">Will hydrogen-fueled cars ever catch up to EVs?</p>
     </div>
@@ -52,34 +49,33 @@
     </div>
   </section>
 
-  <section class="flex flex-col gap-4 ">
-    <div class="flex gap-4 ">
-      <img src="../assets/images/image-retro-pcs.jpg" alt="retro" class="block max-w-30">
-      <div class="flex flex-col gap-2">
-        <p class="text-3xl font-bold text-primary-red">01</p>
-        <h3 class="text-lg font-bold text-neutral-very-dark-blue">Reviving Retro PCs</h3>
-        <p class="text-sm text-neutral-dark-grayish-blue">What happens when old PCs are given modern upgrades?</p>
-      </div>
+  <div class="flex gap-4 items-center lg:items-start">
+    <img src="../assets/images/image-retro-pcs.jpg" alt="retro" class="block max-w-2/6">
+    <div class="flex flex-col gap-2">
+      <p class="text-4xl font-bold text-primary-red">01</p>
+      <h3 class="text-lg font-bold text-neutral-very-dark-blue">Reviving Retro PCs</h3>
+      <p class="text-sm text-neutral-dark-grayish-blue">What happens when old PCs are given modern upgrades?</p>
     </div>
+  </div>
 
-    <div class="flex gap-4 ">
-      <img src="../assets/images/image-top-laptops.jpg" alt="top laptops" class="block max-w-30">
-      <div class="flex flex-col gap-2">
-        <p class="text-3xl font-bold text-primary-red">02</p>
-        <h3 class="text-lg font-bold text-neutral-very-dark-blue">Top 10 Laptops of 2022</h3>
-        <p class="text-sm text-neutral-dark-grayish-blue">Our best picks for various needs and budgets.</p>
-      </div>
+  <div class="flex gap-4 items-center lg:items-start">
+    <img src="../assets/images/image-top-laptops.jpg" alt="top laptops" class="block max-w-2/6">
+    <div class="flex flex-col gap-2">
+      <p class="text-4xl font-bold text-primary-red">02</p>
+      <h3 class="text-lg font-bold text-neutral-very-dark-blue">Top 10 Laptops of 2022</h3>
+      <p class="text-sm text-neutral-dark-grayish-blue ">Our best picks for various needs and budgets.</p>
     </div>
+  </div>
 
-    <div class="flex gap-4 ">
-      <img src="../assets/images/image-gaming-growth.jpg" alt="gaming-growth" class="block max-w-30">
-      <div>
-        <p class="text-3xl font-bold text-primary-red">03</p>
-        <h3 class="text-lg font-bold text-neutral-very-dark-blue">The Growth of Gaming</h3>
-        <p class="text-sm text-neutral-dark-grayish-blue">How the pandemic has sparked fresh opportunities.</p>
-      </div>
+  <div class="flex gap-4 items-center lg:items-start">
+    <img src="../assets/images/image-gaming-growth.jpg" alt="gaming-growth" class="block max-w-2/6">
+    <div>
+      <p class="text-4xl font-bold text-primary-red">03</p>
+      <h3 class="text-lg font-bold text-neutral-very-dark-blue">The Growth of Gaming</h3>
+      <p class="text-sm text-neutral-dark-grayish-blue">How the pandemic has sparked fresh opportunities.</p>
     </div>
-  </section>
+  </div>
+
 
  </main>
 
